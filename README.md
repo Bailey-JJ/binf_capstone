@@ -25,4 +25,4 @@ Files contained in the **scripts/** directory can be run in order. <br>
 | Sub-Directory | Content Description |
 |---------------|---------|
 | **data/** | Contains sub-directories: metadata/; raw/; clean/, as well as all appropriate files. |
-| **scripts/** | Contains all scripts needed to get project results |
+| **scripts/** | Contains all scripts needed to get project results. |
