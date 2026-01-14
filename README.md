@@ -1,4 +1,4 @@
-# Evaluating Properties of Bacteria Isolated from UVU's Campus
+# bioinformatics-capstone-bailey-jannuzzi: Evaluating Properties of Bacteria Isolated from UVU's Campus
 
 This repository contains the code, data, and documentation for UVU's Spring 2026 Bioinformatics Capstone project..<br>
 The project involves the assembly and annotation of an isolated bacteria genome and running comparative analyses.<br> 
