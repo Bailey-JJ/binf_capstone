@@ -7,6 +7,7 @@ The project involves the assembly and annotation of an isolated bacteria genome 
 Final conclusion can be found in the [insert] directory.
 
 **Key Results:** <br>
+To be added.
 
 ## Tools & Software
 
@@ -22,8 +23,11 @@ Script files are named: script-##_[description].sh. <br>
 Files contained in the **scripts/** directory can be run in order. <br><br>
 ***MUST download any tools/software listed above before running scripts.*** <br><br>
 **Sequencing data cannot be uploaded due to size. If you are wanting to run this pipeline as is, with the original data, you must put the compressed FASTQ files into the _data/raw/compressed_files/_ directory.** <br>
-Sequencing data can be retrieved through request as it is not hosted on a public storage site.<br> <br>
-Errors may occur if different tool/software versions are used as commands and their flags may be changed across versions. If an error occurs, check your version usage.
+Sequencing data can be retrieved through request as it is not hosted on a public storage site. <br> <br>
+
+### Potential Errors: <br>
+Errors may occur if different tool/software versions are used as commands and their flags may be changed across versions. If an error occurs, check your version usage. <br>
+Additional possible errors may result from files or directories being renamed. If pulling directly from this repository, do not change directory structure or file names, this will prevent name errors. <br>
 
 ## Directory Structure
 
