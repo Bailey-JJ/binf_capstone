@@ -18,7 +18,10 @@ Final conclusion can be found in the [insert] directory.
 
 ## Usage
 
-Files contained in the **scripts/** directory can be run in order. <br>
+Script files are named: script-##_[description].sh. <br>
+Files contained in the **scripts/** directory can be run in order. Download any tools/software listed above before running scripts. <br>
+
+Errors may occur if different tool/software versions are used as commands and their flags may be changed across versions. If an error occurs, check your version usage.
 
 ## Directory Structure
 
