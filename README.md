@@ -27,5 +27,5 @@ Errors may occur if different tool/software versions are used as commands and th
 
 | Sub-Directory | Content Description |
 |---------------|---------|
-| **data/** | Contains sub-directories: metadata/; raw/; clean/, as well as all appropriate files. |
+| **data/** | Contains sub-directories: metadata/; raw/; qc/, as well as all appropriate files. Further descriptions are provided in these sub-directories independent README files. |
 | **scripts/** | Contains all scripts needed to get project results. |
