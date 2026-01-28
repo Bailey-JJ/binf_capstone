@@ -10,9 +10,9 @@ Final conclusion can be found in the [insert] directory.
 
 ## Tools & Software
 
-| Tool / Software | Packages / Description |
-|-----------------|------------------------|
-| **[insert]** | [insert] |
+| Tool / Software | Packages / Description | Links |
+|-----------------|------------------------|-------|
+| **fastp 0.23.4** | Used to perform quality checks and trim reads. | [![Fastp GitHub](https://github.com/OpenGene/fastp.git)
 | **[insert]** | [insert] |
 | **[insert]** | [insert] |
 
