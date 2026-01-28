@@ -1,3 +1,4 @@
 # Ignore fastq and fastq.gx files that are too big to push to GitHub.
 /data/raw/compressed_files
 /data/raw/uncompressed_fastqs
+/data/qc/trimmed_reads
