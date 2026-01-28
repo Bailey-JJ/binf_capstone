@@ -2,9 +2,9 @@
 
 | Folder | Description |
 | --- | --- |
-| **metadata/** | Files are too big to be contained on GitHub, data retrieved from a shared OneDrive folder. |
-| **raw/**  | Contains any files of GitHub appropriate size that are used along the pipeline steps. |
-| **clean/**  | Final 'cleaned' files of GitHub appropriate size. |
+| **metadata/** | Local file directory: Files are too big to be contained on GitHub, data retrieved from a shared OneDrive folder. |
+| **raw/**  | Local directory: Contains any files of GitHub appropriate size that are used along the pipeline steps. |
+| **qc/**  | QC and Trimmed reports of GitHub appropriate size. .fastq files not uploaded to GitHub due to file sizes. |
 
 # Sample Information
 
