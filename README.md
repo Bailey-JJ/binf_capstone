@@ -13,7 +13,7 @@ To be added.
 
 | Tool / Software | Packages / Description | Links |
 |-----------------|------------------------|-------|
-| **fastp 0.23.4** | Used to perform quality checks and trim reads. | [![Fastp GitHub](https://github.com/OpenGene/fastp.git)
+| **fastp 0.23.4** | Used to perform quality checks and trim reads. | [Fastp GitHub](https://github.com/OpenGene/fastp.git)
 | **[insert]** | [insert] |
 | **[insert]** | [insert] |
 
