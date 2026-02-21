@@ -1,37 +1,51 @@
-# bioinformatics-capstone-bailey-jannuzzi: Evaluating Properties of Bacteria Isolated from UVU's Campus
+# bioinformatics-capstone-bailey-jannuzzi: Comparative Genomics of *Salmonella enterica*: Identifying Phage Susceptibility-Associated Genes
 
-This repository contains the code, data, and documentation for UVU's Spring 2026 Bioinformatics Capstone project..<br>
-The project involves the assembly and annotation of an isolated bacteria genome and running comparative analyses.<br> 
+## Project Purpose
 
-### Project Interpretation
-Final conclusion can be found in the [insert] directory.
+This project uses comparative genomics to investigate whether there are genes consistently present in phage-susceptible 
+*Salmonella enterica* strains that are absent in non-susceptible strains of the same serovar. 
+The goal is exploratory: by identifying candidate host-cell receptor genes, we aim to narrow down a more manageable set of 
+bacterial clones for downstream phage susceptibility testing.
 
-**Key Results:** <br>
-To be added.
 
-## Tools & Software
+## Data Source
+Genome assemblies were obtained from NCBI based on the following publication:
 
-| Tool / Software | Packages / Description | Links |
-|-----------------|------------------------|-------|
-| **fastp 0.23.4** | Used to perform quality checks and trim reads. | [Fastp GitHub](https://github.com/OpenGene/fastp.git)
-| **[insert]** | [insert] |
-| **[insert]** | [insert] |
+> Fricke WF, et al. (2011). **Comparative Genomics of 28 Salmonella enterica Isolates: Evidence for CRISPR-Mediated Adaptive Sublineage Evolution.** *Journal of Bacteriology*, 193(14):3556–3568. https://doi.org/10.1128/JB.00297-11
+<br>
+A total of 28 *Salmonella enterica* genome assemblies were downloaded as `.fna` files using their NCBI accession numbers (GCF format).
 
-## Usage
 
-Script files are named: script-##_[description].sh. <br>
-Files contained in the **scripts/** directory can be run in order. <br><br>
-***MUST download any tools/software listed above before running scripts.*** <br><br>
-**Sequencing data cannot be uploaded due to size. If you are wanting to run this pipeline as is, with the original data, you must put the compressed FASTQ files into the _data/raw/compressed_files/_ directory.** <br>
-Sequencing data can be retrieved through request as it is not hosted on a public storage site. <br> <br>
+## How the Sequences Were Generated
+Sequences were originally produced using Sanger sequencing of fosmid libraries, as described in the source publication. Full sequencing methodology details can be found in the original paper. For this project, we are working directly from the published assembled genome files (`.fna`) and are not performing any upstream assembly steps.
 
-### Potential Errors: <br>
-Errors may occur if different tool/software versions are used as commands and their flags may be changed across versions. If an error occurs, check your version usage. <br>
-Additional possible errors may result from files or directories being renamed. If pulling directly from this repository, do not change directory structure or file names, this will prevent name errors. <br>
 
-## Directory Structure
+## Tools Used
 
-| Sub-Directory | Content Description |
-|---------------|---------|
-| **data/** | Contains sub-directories: metadata/; raw/; qc/, as well as all appropriate files. Further descriptions are provided in these sub-directories independent README files. |
-| **scripts/** | Contains all scripts needed to get project results. |
+| Tool | Version | Purpose |
+|------|---------|---------|
+| BUSCO | 6.0.0 | Genome completeness assessment. Checks assembly quality against conserved bacterial gene sets |
+| QUAST | - | Assembly statistics. Provides contiguity metrics (N50, contig count, total length, etc.) |
+
+Both tools were run via conda environments for reproducibility.
+
+
+## Key Parameters and Choices
+
+### BUSCO
+- **Mode:** `genome` (prokaryotic genome mode, using Prodigal for gene prediction)
+- **Lineage:** `bacteria_odb10` (Creation date: 2024-01-08; 124 BUSCOs across 4,085 reference genomes)
+- Each genome was run independently with a separate output directory
+
+### QUAST
+- Default parameters
+- Each genome was run independently with a separate output directory
+
+
+## How to Reproduce Results
+
+### 1. Set up conda environments
+Separate conda environments for running BUSCO & QUAST
+
+### 2. Run scripts in order found in the scripts folder.
+Scripts must be run using their associated conda environment. 
