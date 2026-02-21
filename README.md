@@ -45,7 +45,41 @@ Both tools were run via conda environments for reproducibility.
 ## How to Reproduce Results
 
 ### 1. Set up conda environments
-Separate conda environments for running BUSCO & QUAST
+Separate conda environments for running BUSCO & QUAST. <br>
+Run scripts in order found in the scripts folder. <br>
+Scripts must be run using their associated conda environment. <br>
 
-### 2. Run scripts in order found in the scripts folder.
-Scripts must be run using their associated conda environment. 
+```bash
+conda create -n busco_env -c conda-forge -c bioconda busco=5
+conda create -n quast_env -c bioconda -c conda-forge quast
+```
+
+#### 2. Run BUSCO
+```bash
+conda activate busco_env
+bash scripts/script-01_busco.sh
+```
+
+### 3. Run QUAST
+
+```bash
+conda activate quast_env
+bash scripts/script-02_quast.sh
+```
+
+
+# Project Structure
+
+| Directory | Contents |
+|-----------|----------|
+| `assembly_evaluation/` | Per-genome BUSCO & QUAST output directories (one per GCF accession) |
+| `data/clean/` | Cleaned and processed data files |
+| `data/metadata/` | Sample metadata files |
+| `data/raw/genomes/` | Input `.fna` genome assemblies, named by GCF accession |
+| `scripts/` | All analysis scripts in order of use | 
+
+
+## Notes
+
+- This project starts from pre-assembled genomes; no read trimming, assembly, or polishing steps were performed.
+- Quality control (BUSCO, QUAST) is a checkpoint before proceeding to comparative genomics analyses.
