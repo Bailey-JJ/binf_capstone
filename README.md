@@ -22,10 +22,11 @@ Sequences were originally produced using Sanger sequencing of fosmid libraries, 
 
 ## Tools Used
 
-| Tool | Version | Purpose |
-|------|---------|---------|
+| Tool | Version | Purpose | Version Link |
+|------|---------|---------|--------------|
 | BUSCO | 6.0.0 | Genome completeness assessment. Checks assembly quality against conserved bacterial gene sets |
 | QUAST | - | Assembly statistics. Provides contiguity metrics (N50, contig count, total length, etc.) |
+| Bakta | - | - | https://zenodo.org/records/14916843/files/db.tar.xz?download=1 |
 
 Both tools were run via conda environments for reproducibility.
 
