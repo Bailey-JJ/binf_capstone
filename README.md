@@ -28,7 +28,7 @@ Sequences were originally produced using Sanger sequencing of fosmid libraries, 
 | QUAST | - | Assembly statistics. Provides contiguity metrics (N50, contig count, total length, etc.) |
 | Bakta | - | - | https://zenodo.org/records/14916843/files/db.tar.xz?download=1 |
 
-Both tools were run via conda environments for reproducibility.
+Both BUSCO and QUAST tools were run via conda environments for reproducibility.
 
 
 ## Key Parameters and Choices
