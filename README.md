@@ -80,14 +80,12 @@ bash scripts/script-02_quast.sh
 
 | Directory | Contents |
 |-----------|----------|
-| `assembly_evaluation/` | Per-genome BUSCO & QUAST output directories (one per GCF accession) |
 | `data/clean/` | Cleaned and processed data files |
 | `data/metadata/` | Sample metadata files |
 | `data/raw/genomes/` | Input `.fna` genome assemblies, named by GCF accession |
-| `scripts/` | All analysis scripts in order of use | 
-| `assembly_evaluation/` | Output files for assembly evaluations. |
+| `output/assembly_evaluation/` | Per-genome BUSCO & QUAST output directories (one per GCF accession) |
 | `output/genome_annotation/` | Output files for genome annotations. |
-
+| `scripts/` | All analysis scripts in order of use | 
 
 ## Notes
 
