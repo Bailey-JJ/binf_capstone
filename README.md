@@ -25,10 +25,10 @@ Sequences were originally produced using Sanger sequencing of fosmid libraries, 
 | Tool | Version | Purpose | Version Link |
 |------|---------|---------|--------------|
 | BUSCO | 6.0.0 | Genome completeness assessment. Checks assembly quality against conserved bacterial gene sets |
-| QUAST | - | Assembly statistics. Provides contiguity metrics (N50, contig count, total length, etc.) |
-| Bakta | - | - | https://zenodo.org/records/14916843/files/db.tar.xz?download=1 |
+| QUAST | v5.3.0 | Assembly statistics. Provides contiguity metrics (N50, contig count, total length, etc.) | https://sourceforge.net/projects/quast/files/quast-5.3.0.tar.gz/ |
+| Bakta | 1.12.0 | Genome annotation | https://zenodo.org/records/14916843/files/db.tar.xz?download=1 |
 
-Both BUSCO and QUAST tools were run via conda environments for reproducibility.
+BUSCO, QUAST, and Bakta tools were run via conda environments for reproducibility.
 
 
 ## Key Parameters and Choices
@@ -53,6 +53,7 @@ Scripts must be run using their associated conda environment. <br>
 ```bash
 conda create -n busco_env -c conda-forge -c bioconda busco=5
 conda create -n quast_env -c bioconda -c conda-forge quast
+conda create -n bakta_env -c conda-forge -c bioconda bakta
 ```
 
 #### 2. Run BUSCO
@@ -68,6 +69,12 @@ conda activate quast_env
 bash scripts/script-02_quast.sh
 ```
 
+### 4. Run Bakta
+
+```bash
+conda activate bakta_env
+bash scripts/script-02_quast.sh
+```
 
 # Project Structure
 
@@ -78,6 +85,8 @@ bash scripts/script-02_quast.sh
 | `data/metadata/` | Sample metadata files |
 | `data/raw/genomes/` | Input `.fna` genome assemblies, named by GCF accession |
 | `scripts/` | All analysis scripts in order of use | 
+| `assembly_evaluation/` | Output files for assembly evaluations. |
+| `output/genome_annotation/` | Output files for genome annotations. |
 
 
 ## Notes
