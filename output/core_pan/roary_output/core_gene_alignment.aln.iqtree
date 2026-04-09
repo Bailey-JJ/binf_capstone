@@ -1,0 +1,108 @@
+IQ-TREE 2.0.7 built Apr  1 2024
+
+Input file name: core_gene_alignment.aln
+Type of analysis: tree reconstruction
+Random seed number: 130023
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 9 sequences with 3363663 nucleotide sites
+Number of constant sites: 3.2578e+06 (= 96.8527% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 3.2578e+06 (= 96.8527% of all sites)
+Number of parsimony informative sites: 48271
+Number of distinct site patterns: 6436
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+G4
+
+Rate parameter R:
+
+  A-C: 0.9966
+  A-G: 5.1238
+  A-T: 0.6941
+  C-G: 0.6702
+  C-T: 7.9087
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2281
+  pi(C) = 0.2553
+  pi(G) = 0.2845
+  pi(T) = 0.2321
+
+Rate matrix Q:
+
+  A   -0.9267    0.1259    0.7212   0.07969
+  C    0.1125    -1.115   0.09433    0.9081
+  G    0.5783   0.08465   -0.7778    0.1148
+  T   0.07834    0.9989    0.1407    -1.218
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.02004
+
+ Category  Relative_rate  Proportion
+  1         5.055e-31      0.25
+  2         1.064e-15      0.25
+  3         9.777e-07      0.25
+  4         4              0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5754193.2042 (s.e. 3149.2188)
+Unconstrained log-likelihood (without tree): -6429474.5748
+Number of free parameters (#branches + #model parameters): 24
+Akaike information criterion (AIC) score: 11508434.4085
+Corrected Akaike information criterion (AICc) score: 11508434.4088
+Bayesian information criterion (BIC) score: 11508747.0935
+
+Total tree length (sum of branch lengths): 0.0549
+Sum of internal branch lengths: 0.0082 (14.8894% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'GCF_000007545.1_ASM754v1_genomic' is drawn at root
+
++--------------------------------------------------------GCF_000007545.1_ASM754v1_genomic
+|
+|        +-------------------------------------------------GCF_000020745.1_ASM2074v1_genomic
++--------|
+|        +-----------------------------------GCF_000020885.1_ASM2088v1_genomic
+|
+|      +---------------------------------GCF_000020925.1_ASM2092v1_genomic
++------|
+       |                         +----------------GCF_000022165.1_ASM2216v1_genomic
+       |         +---------------|
+       |         |               +--------------GCF_000170215.1_ASM17021v1_genomic
+       |    +----|
+       |    |    +------------------------------GCF_000171515.1_ASM17151v1_genomic
+       +----|
+            |       +-----------------------------GCF_000171415.1_ASM17141v1_genomic
+            +-------|
+                    +--------------------------------GCF_000171535.2_ASM17153v2_genomic
+
+Tree in newick format:
+
+(GCF_000007545.1_ASM754v1_genomic:0.0087148678,(GCF_000020745.1_ASM2074v1_genomic:0.0077284510,GCF_000020885.1_ASM2088v1_genomic:0.0054900307):0.0013870322,(GCF_000020925.1_ASM2092v1_genomic:0.0052141246,(((GCF_000022165.1_ASM2216v1_genomic:0.0026540866,GCF_000170215.1_ASM17021v1_genomic:0.0024212202):0.0025625970,GCF_000171515.1_ASM17151v1_genomic:0.0047313506):0.0008574613,(GCF_000171415.1_ASM17141v1_genomic:0.0046504295,GCF_000171535.2_ASM17153v2_genomic:0.0051011687):0.0012915036):0.0008676170):0.0012045843);
+
+TIME STAMP
+----------
+
+Date and time: Wed Apr  8 23:01:32 2026
+Total CPU time used: 15.513009 seconds (0h:0m:15s)
+Total wall-clock time used: 5.87720918 seconds (0h:0m:5s)
+
