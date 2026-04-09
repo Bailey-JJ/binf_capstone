@@ -1,0 +1,17 @@
+#! No. genomes: 9
+#! Ave. genes per genome: 4473.889
+#! No. pan genes: 6853
+#! No. core genes: 3634
+#! Heaps' law model in DOI: 10.1016/j.mib.2008.09.006:	Gamma=0.202 +/- 0.020, Kappa=4330.663 +/- 146.395, ~145.275 new genes per new genome.
+#! Power law model in DOI: 10.1016/j.mib.2008.09.006:	Alpha=0.563 +/- 0.042, Kappa=704.426 +/- 41.504, ~192.677 new genes per new genome.
+#! Power law model for the core genome:              	Alpha=0.090 +/- 0.022, Kappa=4352.211 +/- 146.720, ~33.754 fewer core genes per new genome.
+#No. genome	(Pan-genome)Median	2.5%	97.5%	|	(Core-genome)Median	2.5%	97.5%
+1	4482	4309	4576	|	4482	4309	4576
+2	4972	4590	5150	|	3981	3830	4255
+3	5337	4950	5604	|	3840	3746	4089
+4	5653	5283	5960	|	3762	3691	3976
+5	5930	5569	6248	|	3726	3665	3883
+6	6179	5847	6514	|	3700	3647	3846
+7	6410	6128	6736	|	3669	3640	3798
+8	6632	6495	6828	|	3643	3636	3692
+9	6853	6853	6853	|	3634	3634	3634
