@@ -1,0 +1,66 @@
+2026-04-21 20:01:24 INFO     Welcome to PhiSpy.py version 5.0.6
+2026-04-21 20:01:24 INFO     Starting PhiSpy.py with the following arguments
+Namespace(infile='/home/bailey/Desktop/binf_capstone/output/genome_annotation/GCF_000171415.1_ASM17141v1_genomic_bakta/GCF_000171415.1_ASM17141v1_genomic.gbff', output_dir='/home/bailey/Desktop/binf_capstone/output/prophage/GCF_000171415.1_ASM17141v1_genomic', make_training_data=None, training_set='data/trainSet_genericAll.txt', list=False, file_prefix='', evaluate=False, number=5, min_contig_size=5000, window_size=30, nonprophage_genegaps=10, phage_genes=1, metrics=['orf_length_med', 'shannon_slope', 'at_skew', 'gc_skew', 'max_direction'], randomforest_trees=500, expand_slope=False, kmers_type='all', phmms=None, include_annotations=True, ignore_annotations=False, color=False, threads=4, output_choice=3, include_all_repeats=False, keep_dropped_predictions=False, extra_dna=2000, min_repeat_len=10, log='/home/bailey/Desktop/binf_capstone/output/prophage/GCF_000171415.1_ASM17141v1_genomic/phispy.log', quiet=False, keep=False, logger=<Logger PhiSpy (Level 5)>)
+2026-04-21 20:01:24 INFO     Processing 24 contigs
+2026-04-21 20:01:24 INFO     Making Testing Set...
+2026-04-21 20:01:26 INFO     Start Classification Algorithm...
+2026-04-21 20:01:26 INFO     Using training set in data/trainSet_genericAll.txt
+2026-04-21 20:01:27 INFO     Using the following metric(s): {'at_skew', 'gc_skew', 'max_direction', 'orf_length_med', 'shannon_slope'}.
+2026-04-21 20:01:27 INFO     Running the random forest classifier with 500 trees and 4 threads
+2026-04-21 20:01:56 INFO     Rank threshold calculated as 0.4125465991140559
+2026-04-21 20:01:57 INFO     As the training flag is zero, down-weighting unknown functions
+2026-04-21 20:01:57 INFO     Evaluating...
+2026-04-21 20:01:57 INFO     Checking prophages we might have found
+2026-04-21 20:01:57 INFO     Potential prophages (sorted highest to lowest)
+2026-04-21 20:01:57 INFO     Contig	Start	Stop	Number of potential genes	Status
+2026-04-21 20:01:57 INFO     contig_59	324765	371394	52	Kept
+2026-04-21 20:01:57 INFO     contig_54	100912	144025	44	Kept
+2026-04-21 20:01:57 INFO     contig_59	21784	48800	26	Dropped. No genes were identified as phage genes
+2026-04-21 20:01:57 INFO     contig_48	3900	34515	24	Kept
+2026-04-21 20:01:57 INFO     contig_44	175	12413	24	Dropped. No genes were identified as phage genes
+2026-04-21 20:01:57 INFO     contig_56	152	24845	16	Kept
+2026-04-21 20:01:57 INFO     contig_46	12537	29713	15	Kept
+2026-04-21 20:01:57 INFO     contig_42	152	17330	15	Kept
+2026-04-21 20:01:57 INFO     contig_55	21228	38456	12	Kept
+2026-04-21 20:01:57 INFO     contig_49	31103	57137	10	Kept
+2026-04-21 20:01:57 INFO     contig_49	2290	20127	7	Kept
+2026-04-21 20:01:57 INFO     contig_61	416346	422013	4	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_63	116891	120694	3	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_62	652755	660185	3	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_52	46	4439	3	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_45	9215	14352	3	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_61	265383	273334	2	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_57	230145	231730	2	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_46	5258	6434	2	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_43	816	2307	2	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_63	150643	152691	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_63	134452	134964	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_63	99541	99777	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_62	585479	585724	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_62	514864	515601	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_62	359461	360357	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_61	292456	293127	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_60	139229	139846	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_59	264187	264312	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_59	81110	81973	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_58	440027	440329	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_56	135072	135362	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_53	52802	53350	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_51	41015	41917	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     contig_50	36396	36962	1	Dropped. Region too small (Not enough genes)
+2026-04-21 20:01:57 INFO     PROPHAGE: 1 Contig: contig_42 Start: 152 Stop: 17330
+2026-04-21 20:01:57 INFO     PROPHAGE: 2 Contig: contig_46 Start: 12537 Stop: 29713
+2026-04-21 20:01:57 INFO     PROPHAGE: 3 Contig: contig_48 Start: 3900 Stop: 34515
+2026-04-21 20:01:57 INFO     There were 2 repeats with the same length as the best. One chosen somewhat randomly!
+2026-04-21 20:01:57 INFO     PROPHAGE: 4 Contig: contig_49 Start: 2290 Stop: 20127
+2026-04-21 20:01:57 INFO     There were 3 repeats with the same length as the best. One chosen somewhat randomly!
+2026-04-21 20:01:57 INFO     PROPHAGE: 5 Contig: contig_49 Start: 31103 Stop: 57137
+2026-04-21 20:01:57 INFO     PROPHAGE: 6 Contig: contig_54 Start: 100912 Stop: 144025
+2026-04-21 20:01:57 INFO     PROPHAGE: 7 Contig: contig_55 Start: 21228 Stop: 38456
+2026-04-21 20:01:57 INFO     PROPHAGE: 8 Contig: contig_56 Start: 152 Stop: 24845
+2026-04-21 20:01:57 INFO     There were 2 repeats with the same length as the best. One chosen somewhat randomly!
+2026-04-21 20:01:57 INFO     PROPHAGE: 9 Contig: contig_59 Start: 324765 Stop: 371394
+2026-04-21 20:01:57 INFO     Creating output files
+2026-04-21 20:01:57 INFO     Writing GenBank output file
+2026-04-21 20:01:57 INFO     Writing prophage_coordinates output file
+2026-04-21 20:01:57 INFO     Done!!! Output is in /home/bailey/Desktop/binf_capstone/output/prophage/GCF_000171415.1_ASM17141v1_genomic and the log is in /home/bailey/Desktop/binf_capstone/output/prophage/GCF_000171415.1_ASM17141v1_genomic/phispy.log
